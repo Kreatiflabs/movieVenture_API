@@ -1,0 +1,18 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "movieVentureDb": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "movieVentureDb",
+    "useNewUrlParser":true,
+    "user":"root",
+    "password":"root",
+    "auth": {
+      "authdb": "movieVentureDb"
+    },
+    "connector": "mongodb"
+  }
+}

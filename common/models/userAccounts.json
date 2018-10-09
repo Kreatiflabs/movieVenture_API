@@ -1,0 +1,44 @@
+{
+  "name": "UserAcccounts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "_id": {
+      "type": "number",
+      "required": true
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "roleId": {
+      "type": "string",
+      "required": false
+    },
+    "area": {
+      "type": "number",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "roles": {
+      "type": "belongsTo",
+      "model": "Lms_Roles",
+      "foreignKey": "roleId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
