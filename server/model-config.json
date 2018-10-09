@@ -36,8 +36,8 @@
     "dataSource": "db",
     "public": false
   },
-  "UserAcccounts": {
-    "dataSource": "movieVentureDb",
+  "userAccounts": {
+    "dataSource": "monggoMovieVentureDb",
     "public":true
   }
 }

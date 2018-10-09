@@ -1,5 +1,5 @@
 {
-  "name": "UserAcccounts",
+  "name": "userAccounts",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -8,7 +8,7 @@
   "properties": {
     "_id": {
       "type": "number",
-      "required": true
+      "required": false
     },
     "username": {
       "type": "string",
@@ -18,27 +18,13 @@
       "type": "string",
       "required": true
     },
-    "fullName": {
+    "email": {
       "type": "string",
       "required": true
-    },
-    "roleId": {
-      "type": "string",
-      "required": false
-    },
-    "area": {
-      "type": "number",
-      "required": false
     }
   },
   "validations": [],
-  "relations": {
-    "roles": {
-      "type": "belongsTo",
-      "model": "Lms_Roles",
-      "foreignKey": "roleId"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }
